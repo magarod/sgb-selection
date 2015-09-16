@@ -1,0 +1,19 @@
+<ion-view mz-screen view-title="{{ title | translate }}">
+    <ion-content>
+		<h3 class="pgraph">{{data.tabtitle}}</h3>
+		<p class="pgraph desc">{{data.desc1}}</p>
+		<p class="pgraph desc">{{data.desc2}}</p>
+		<p class="pgraph inst">{{data.instruction}}</p>
+		<div class="list">
+			<button class="item item-avatar item-icon-right button-full lefttext" ng-repeat="option in data.options" ng-click="changeChecked(option)">
+				<img src="{{option.image}}">
+				{{option.text}}
+				<p class="inline leftalign"> &nbsp- {{option.url}}</p>
+				<i ng-show="option.checked" class="icon ion-ios-checkmark-empty check"></i>
+			</button>
+		</div>
+		<button class="button button-block button-positive" ng-click="getChecked()">
+		  {{'submit' | translate}}
+		</button>
+    </ion-content>
+</ion-view>

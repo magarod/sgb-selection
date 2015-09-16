@@ -1,0 +1,53 @@
+//Define any sass variables and styles here.
+//They may be overridden by the application using the screen.
+
+$myColor: #00dda0;
+$myTextColor: #454545;
+$bckgColor: #EF0FFF;
+$checkColor: #75991C;
+
+.customHeader {
+  color: $myColor;
+}
+
+.pgraph {
+	margin-left: 2%;
+	margin-right: 2%;
+}
+
+.inline{
+	text-align:right;
+	position: absolute;
+}
+
+.desc{
+	color: $myTextColor;
+}
+
+.inst{
+	font-size:18px;
+}
+
+.active{
+	background-color: $bckgColor;
+}
+
+.check{
+	color: $checkColor;
+}
+
+.item-checkbox-img {
+  vertical-align: middle;
+  position: absolute;
+  top: 5px;
+  right: 15px;
+  height: 100%;
+  width: 100%;
+  max-width: 40px;
+  max-height: 40px;
+  border-radius: 50%;
+}
+
+.lefttext{
+	text-align: left;
+}
